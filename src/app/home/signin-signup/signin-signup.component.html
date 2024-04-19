@@ -1,0 +1,34 @@
+<div class="container">
+    <h4>SignUp</h4>
+    <div class="form-container">
+        <form [formGroup]="reactiveForm" (ngSubmit)="formData()">
+            <div class="from-input">
+                <input type="text" formControlName="name" placeholder="Enter name">
+            </div>
+
+            <div class="from-input"   >
+                <input type="email" formControlName="email" placeholder="email">
+            </div>
+
+            <div class="from-input" >
+                <input type="password" formControlName="password" placeholder="password">
+            </div>
+
+
+            <button type="submit">SignUp</button>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+

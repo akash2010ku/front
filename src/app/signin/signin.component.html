@@ -1,0 +1,19 @@
+<div class="container">
+    <h4>SignIn</h4>
+    <div class="form-container">
+        <form [formGroup]="signIn" (ngSubmit)="signInValid()">
+
+
+            <div class="from-input"   >
+                <input type="email" formControlName="email" placeholder="email">
+            </div>
+
+            <div class="from-input" >
+                <input type="password" formControlName="password" placeholder="password">
+            </div>
+
+
+            <button type="submit">SignIn</button>
+        </form>
+    </div>
+</div>

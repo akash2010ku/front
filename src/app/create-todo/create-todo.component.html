@@ -1,0 +1,19 @@
+<div class="container">
+    <h4>Create a new Todo</h4>
+    <div class="form-container">
+        <form [formGroup]="insertTodo" (ngSubmit)="NewTodo()">
+
+
+            <div class="from-input"   >
+                <input type="text" formControlName="title" placeholder="Enter the todo title">
+            </div>
+
+            <div class="from-input" >
+                <input type="text" formControlName="description" placeholder="Enter the todo description">
+            </div>
+
+
+            <button type="submit">Enter</button>
+        </form>
+    </div>
+</div>
